@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 2rem;
   overflow: hidden;
 }
 
@@ -32,14 +32,10 @@ header {
 .header__socials::after,
 .header__socials::before {
   content: "";
-  width: 1px;
+  width: 5px;
   height: 2rem;
   background: var(--color-primary);
-}
-
-.header__socials > a {
-  display: flex;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 /* image */
@@ -49,6 +45,7 @@ header {
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 4rem;
+  filter: drop-shadow(4px 4px 4px var(--color-primary));
 }
 
 /* SCROLL DOWN */
