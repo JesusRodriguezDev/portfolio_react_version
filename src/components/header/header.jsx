@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import CTA from "./CTA";
 import MyPicture from "../../assets/jesus.png";
+import HeaderSocial from "./HeaderSocial";
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
           Fullstack Developer / Data and Visualization Engineer
         </h5>
         <CTA />
+        <HeaderSocial />
 
         <div className="me">
           <img src={MyPicture} alt="me" />
