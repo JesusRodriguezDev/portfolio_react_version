@@ -1,8 +1,8 @@
 import React from "react";
 import "./services.css";
 
-const cervices = () => {
-  return <div>cervices</div>;
+const Services = () => {
+  return <div>Services</div>;
 };
 
-export default cervices;
+export default Services;

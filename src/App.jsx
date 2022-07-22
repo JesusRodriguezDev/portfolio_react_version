@@ -1,12 +1,13 @@
 import React from "react";
-import 
+import Header from "./components/header/Header";
+import Testimonials from "./components/testimonials/Testimonials";
 
-const app = () => {
+const App = () => {
   return (
     <>
-    <header />
+      <Header />
     </>
-  )
+  );
 };
 
-export default app;
+export default App;
