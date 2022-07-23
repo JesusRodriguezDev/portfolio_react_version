@@ -27,13 +27,14 @@ header {
   position: absolute;
   left: 0;
   bottom: 3rem;
+  font-size: 5rem;
 }
 
 .header__socials::after,
 .header__socials::before {
   content: "";
-  width: 5px;
-  height: 2rem;
+  width: 10px;
+  height: 5rem;
   background: var(--color-primary);
   border-radius: 5px;
 }
@@ -72,8 +73,7 @@ header {
   .header {
     height: 100vh;
   }
-  .header__socials,
-  .scroll__down {
+  .header__socials {
     display: none;
   }
 }
