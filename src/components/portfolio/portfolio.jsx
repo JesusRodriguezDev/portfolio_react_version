@@ -12,7 +12,7 @@ const Portfolio = () => {
   const projects = [
     {
       id: "p1",
-      alt: "weather dashboard",
+      image: IMG1,
       named: "Weather Dashboard",
       link1: "https://github.com/JesusRodriguezDev/Weather-Dashboard",
       link2: "https://jesusrodriguezdev.github.io/Weather-Dashboard/",
@@ -20,7 +20,7 @@ const Portfolio = () => {
 
     {
       id: "p2",
-      alt: "cocktail creations",
+      image: IMG2,
       named: "Cocktail Creations",
       link1: "https://github.com/JesusRodriguezDev/Cocktail_Creations",
       link2: "https://jesusrodriguezdev.github.io/Cocktail_Creations/",
@@ -28,7 +28,7 @@ const Portfolio = () => {
 
     {
       id: "p3",
-      alt: "day planner",
+      image: IMG3,
       named: "Day Planner",
       link1: "https://github.com/JesusRodriguezDev/dayPlannerWebApp",
       link2: "https://jesusrodriguezdev.github.io/dayPlannerWebApp/",
@@ -36,7 +36,7 @@ const Portfolio = () => {
 
     {
       id: "p4",
-      alt: "coding quiz",
+      image: IMG4,
       named: "Coding Quiz",
       link1: "https://github.com/JesusRodriguezDev/javaScriptQuizHomework",
       link2: "https://jesusrodriguezdev.github.io/javaScriptQuizHomework/",
@@ -44,15 +44,15 @@ const Portfolio = () => {
 
     {
       id: "p5",
-      alt: "team profile generator",
-      named: "Team Profile Generator (Backend Project)",
+      image: IMG5,
+      named: "Team Profile Generator",
       link1: "https://github.com/JesusRodriguezDev/Team_Profile_Generator",
       link2: "",
     },
     {
       id: "p6",
-      alt: "E-commerce Back End",
-      named: "E-commerce Backend (Backend Project)",
+      image: IMG6,
+      named: "E-commerce Backend",
       link1: "https://github.com/JesusRodriguezDev/E-Commerce-Back-End",
       link2: "",
     },
@@ -63,55 +63,25 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className="container container__portfolio">
-        {/* using project card component to populate the various projects */}
-        <ProjectCard
-          image={IMG1}
-          alt={projects[0].alt}
-          named={projects[0].named}
-          link1={projects[0].link1}
-          link2={projects[0].link2}
-        ></ProjectCard>
-
-        <ProjectCard
-          image={IMG2}
-          alt={projects[1].alt}
-          named={projects[1].named}
-          link1={projects[1].link1}
-          link2={projects[1].link2}
-        ></ProjectCard>
-
-        <ProjectCard
-          image={IMG3}
-          alt={projects[2].alt}
-          named={projects[2].named}
-          link1={projects[2].link1}
-          link2={projects[2].link2}
-        ></ProjectCard>
-
-        <ProjectCard
-          image={IMG4}
-          alt={projects[3].alt}
-          named={projects[3].named}
-          link1={projects[3].link1}
-          link2={projects[3].link2}
-        ></ProjectCard>
-
-        <ProjectCard
-          image={IMG5}
-          alt={projects[4].alt}
-          named={projects[4].named}
-          link1={projects[4].link1}
-          // link2={projects[4].link2}
-        ></ProjectCard>
-
-        <ProjectCard
-          image={IMG6}
-          alt={projects[5].alt}
-          named={projects[5].named}
-          link1={projects[5].link1}
-          // link2={projects[5].link2}
-        ></ProjectCard>
+      <div className="container portfolio__container">
+        {projects.map(({ id, image, named, link1, link2 }) => {
+          return (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} alt={named} />
+              </div>
+              <h3>{named}</h3>
+              <div className="portfolio__item-cta">
+                <a href={link1} className="btn" target="_blank">
+                  Github
+                </a>
+                <a href={link2} className="btn btn-primary" target="_blank">
+                  Live Demo Page
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
