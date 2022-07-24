@@ -22,20 +22,20 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <BsFileEarmarkCodeFill className="about__icon" />
-              <h5>Front End</h5>
+              <h5>Frontend</h5>
               <small>HTML, CSS, JavaScript, React</small>
             </article>
 
             <article className="about__card">
               <AiFillCode className="about__icon" />
-              <h5>Back End</h5>
+              <h5>Backend</h5>
               <small>NodeJS</small>
             </article>
 
             <article className="about__card">
               <GoDatabase className="about__icon" />
               <h5>Databases</h5>
-              <small>MySQL, MongoDB</small>
+              <small>MySQL, MongoDB, AWS Athena, Snowflake</small>
             </article>
           </div>
           <p>
