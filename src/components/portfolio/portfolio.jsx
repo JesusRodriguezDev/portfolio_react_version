@@ -1,6 +1,5 @@
 import React from "react";
 import "./portfolio.css";
-import ProjectCard from "./ProjectCard";
 import IMG1 from "../../assets/weather_app_screenshot.png";
 import IMG2 from "../../assets/cocktail_creations_screenshot.png";
 import IMG3 from "../../assets/day_planner_screenshot.png";
@@ -13,48 +12,48 @@ const Portfolio = () => {
     {
       id: "p1",
       image: IMG1,
-      named: "Weather Dashboard",
-      link1: "https://github.com/JesusRodriguezDev/Weather-Dashboard",
-      link2: "https://jesusrodriguezdev.github.io/Weather-Dashboard/",
+      title: "Weather Dashboard",
+      github: "https://github.com/JesusRodriguezDev/Weather-Dashboard",
+      live: "https://jesusrodriguezdev.github.io/Weather-Dashboard/",
     },
 
     {
       id: "p2",
       image: IMG2,
-      named: "Cocktail Creations",
-      link1: "https://github.com/JesusRodriguezDev/Cocktail_Creations",
-      link2: "https://jesusrodriguezdev.github.io/Cocktail_Creations/",
+      title: "Cocktail Creations",
+      github: "https://github.com/JesusRodriguezDev/Cocktail_Creations",
+      live: "https://jesusrodriguezdev.github.io/Cocktail_Creations/",
     },
 
     {
       id: "p3",
       image: IMG3,
-      named: "Day Planner",
-      link1: "https://github.com/JesusRodriguezDev/dayPlannerWebApp",
-      link2: "https://jesusrodriguezdev.github.io/dayPlannerWebApp/",
+      title: "Day Planner",
+      github: "https://github.com/JesusRodriguezDev/dayPlannerWebApp",
+      live: "https://jesusrodriguezdev.github.io/dayPlannerWebApp/",
     },
 
     {
       id: "p4",
       image: IMG4,
-      named: "Coding Quiz",
-      link1: "https://github.com/JesusRodriguezDev/javaScriptQuizHomework",
-      link2: "https://jesusrodriguezdev.github.io/javaScriptQuizHomework/",
+      title: "Coding Quiz",
+      github: "https://github.com/JesusRodriguezDev/javaScriptQuizHomework",
+      live: "https://jesusrodriguezdev.github.io/javaScriptQuizHomework/",
     },
 
     {
       id: "p5",
       image: IMG5,
-      named: "Team Profile Generator",
-      link1: "https://github.com/JesusRodriguezDev/Team_Profile_Generator",
-      link2: "",
+      title: "Team Profile Generator",
+      github: "https://github.com/JesusRodriguezDev/Team_Profile_Generator",
+      live: "https://github.com/JesusRodriguezDev/Team_Profile_Generator",
     },
     {
       id: "p6",
       image: IMG6,
-      named: "E-commerce Backend",
-      link1: "https://github.com/JesusRodriguezDev/E-Commerce-Back-End",
-      link2: "",
+      title: "E-commerce Backend",
+      github: "https://github.com/JesusRodriguezDev/E-Commerce-Back-End",
+      live: "https://github.com/JesusRodriguezDev/E-Commerce-Back-End",
     },
   ];
 
@@ -64,18 +63,18 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {projects.map(({ id, image, named, link1, link2 }) => {
+        {projects.map(({ id, image, title, github, live }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt={named} />
+                <img src={image} alt={title} />
               </div>
-              <h3>{named}</h3>
+              <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={link1} className="btn" target="_blank">
+                <a href={github} className="btn" target="_blank">
                   Github
                 </a>
-                <a href={link2} className="btn btn-primary" target="_blank">
+                <a href={live} className="btn btn-primary" target="_blank">
                   Live Demo Page
                 </a>
               </div>

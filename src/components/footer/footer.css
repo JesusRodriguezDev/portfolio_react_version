@@ -1,0 +1,27 @@
+footer {
+  background: var(--color-bg-variant);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 7rem;
+}
+
+footer a {
+  color: var(--color-primary);
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.footer__socials::after,
+.footer__socials::before {
+  content: "";
+  width: 10px;
+  height: 5rem;
+  background: var(--color-primary);
+  border-radius: 5px;
+}
