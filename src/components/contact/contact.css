@@ -30,3 +30,7 @@ textarea {
   resize: none;
   /* color: var(--color-white); */
 }
+
+.contact__container button {
+  margin-left: 5px;
+}
