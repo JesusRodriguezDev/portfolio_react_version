@@ -4,7 +4,7 @@
 
 - Portfolio site built using React and Email.js
 
-![Page Screenshot](./src/assets/portfolio_screenshot.png)
+![Page Screenshot](./src/assets/portfolio_app_screenshot.png)
 
 ## Live Page Link:
 
