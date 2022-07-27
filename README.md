@@ -2,7 +2,7 @@
 
 ## Description:
 
-- Portfolio site built using React and Emailjs
+- Portfolio site built using React and Email.js
 
 ![Page Screenshot](./src/assets/portfolio_screenshot.png)
 
