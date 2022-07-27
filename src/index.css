@@ -39,8 +39,6 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(../src/assets/bg-texture.png);
-  border: 10px dashed var(--color-primary);
-  border-radius: 20px;
 }
 
 /* General Styles */
@@ -58,7 +56,7 @@ h5 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 section {
@@ -97,13 +95,15 @@ a:hover {
   padding: 0.75rem 1.2rem;
   border-radius: 20px;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 3px dashed var(--color-primary);
   transition: var(--trasition);
+  background: transparent;
 }
 
 .btn:hover {
-  background: var(--color-bg);
+  background: var(--color-primary);
   border-color: transparent;
+  color: var(--color-white);
 }
 
 .btn-primary {

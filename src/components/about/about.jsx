@@ -44,7 +44,7 @@ const About = () => {
             full stack bootcamp to get the necessary foundation to start a
             career as a web developer.
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn">
             Let's Talk
           </a>
         </div>

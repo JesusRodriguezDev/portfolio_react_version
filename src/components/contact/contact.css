@@ -28,5 +28,5 @@ textarea {
   background: transparent;
   border: 5px solid var(--color-primary);
   resize: none;
-  color: var(--color-white);
+  /* color: var(--color-white); */
 }

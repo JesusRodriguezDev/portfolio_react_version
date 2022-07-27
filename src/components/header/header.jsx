@@ -14,7 +14,7 @@ const Header = () => {
           Fullstack Developer / Data and Analytics Engineer
         </h5>
         <CTA />
-        <HeaderSocial />
+        {/* <HeaderSocial /> */}
 
         <div className="me">
           <img src={MyPicture} alt="me" />

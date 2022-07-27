@@ -1,6 +1,5 @@
 import React from "react";
 import "./contact.css";
-import { MdEmail } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -24,14 +23,6 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          {/* <article className="contact__option">
-            <MdEmail />
-            <h4>Email</h4>
-            <h5>jesusrodriguez7@comast.net</h5>
-            <a href="mailto:jesusrodriguez7@comcast.net" target="_blank">
-              Send a Message
-            </a>
-          </article> */}
           <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
@@ -51,7 +42,7 @@ const Contact = () => {
               placeholder="Your Message"
               required
             ></textarea>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn">
               Send Message
             </button>
           </form>
