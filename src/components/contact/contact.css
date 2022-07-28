@@ -3,7 +3,6 @@
   background: var(--color-bg-variant);
   padding: 5px;
   border-radius: 20px;
-  border: 5px dashed var(--color-primary);
 }
 
 .contact__options {
