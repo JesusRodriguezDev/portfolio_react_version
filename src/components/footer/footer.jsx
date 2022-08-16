@@ -8,7 +8,10 @@ const Footer = () => {
   return (
     <footer className="footer__section">
       <div className="footer__socials">
-        <a href="https://linkedin.com" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/jesus-rodriguez-126829114/"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
         <a href="https://github.com/JesusRodriguezDev" target="_blank">
