@@ -23,13 +23,13 @@ const About = () => {
             <article className="about__card">
               <BsFileEarmarkCodeFill className="about__icon" />
               <h5>Frontend</h5>
-              <small>HTML, CSS, JavaScript, React</small>
+              <small>HTML, CSS, JavaScript, Typescript, React</small>
             </article>
 
             <article className="about__card">
               <AiFillCode className="about__icon" />
               <h5>Backend</h5>
-              <small>NodeJS</small>
+              <small>NodeJS, Python, C#</small>
             </article>
 
             <article className="about__card">
