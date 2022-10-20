@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_react_version/static/css/main.ca0bd9b5.css",
-    "main.js": "/portfolio_react_version/static/js/main.5facdd1c.js",
+    "main.js": "/portfolio_react_version/static/js/main.52c79e07.js",
     "static/media/cocktail_creations_screenshot.png": "/portfolio_react_version/static/media/cocktail_creations_screenshot.cbdd62858edfa248fe45.png",
     "static/media/ecommerce_backend_screenshot.png": "/portfolio_react_version/static/media/ecommerce_backend_screenshot.36adcbd0adf4dfdcd8e9.png",
     "static/media/weather_app_screenshot.png": "/portfolio_react_version/static/media/weather_app_screenshot.d4638f692ade4ac461a4.png",
@@ -13,10 +13,10 @@
     "static/media/team_profile_generator_screenshot.png": "/portfolio_react_version/static/media/team_profile_generator_screenshot.c209f07a4985d65a81aa.png",
     "index.html": "/portfolio_react_version/index.html",
     "main.ca0bd9b5.css.map": "/portfolio_react_version/static/css/main.ca0bd9b5.css.map",
-    "main.5facdd1c.js.map": "/portfolio_react_version/static/js/main.5facdd1c.js.map"
+    "main.52c79e07.js.map": "/portfolio_react_version/static/js/main.52c79e07.js.map"
   },
   "entrypoints": [
     "static/css/main.ca0bd9b5.css",
-    "static/js/main.5facdd1c.js"
+    "static/js/main.52c79e07.js"
   ]
 }
